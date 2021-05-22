@@ -2,5 +2,8 @@
 *.pot
 *.pyc
 __pycache__
+.pytest_cache
+.vscode
+
 frontend/node_modules
 .tool-versions

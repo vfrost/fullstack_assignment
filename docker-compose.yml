@@ -7,6 +7,8 @@ services:
     volumes:
       - .:/code
     environment:
-      FLASK_ENV: development
+      FLASK_ENV: base
+      REDIS_URL: redis
+      REDIS_PORT: 6379
   redis:
     image: "redis:alpine"
