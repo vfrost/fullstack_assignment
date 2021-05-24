@@ -4,7 +4,9 @@ import { render } from 'react-dom';
 import ProviderSelector from './clouds/ProviderSelector';
 import RegionSelector from './clouds/RegionSelector';
 
-import Clouds, { Cloud } from './clouds/Clouds';
+import Clouds from './clouds/Clouds';
+
+import { Cloud } from './clouds/CloudItem';
 
 const Application: React.FC = () => {
   const [providers, setProviders] = useState<{[key : string] : string[]}> ({});

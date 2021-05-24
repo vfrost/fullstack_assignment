@@ -9,7 +9,6 @@ interface RegionSelectorProps {
 
 const RegionSelector: React.FC<RegionSelectorProps> = ({regions, selectedRegion, selectRegion}) => {
   const hasRegions = regions.length > 0;
-
   if (!hasRegions) return (<></>);
 
   return(
