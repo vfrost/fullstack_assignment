@@ -1,6 +1,7 @@
 FROM node:latest as build
 WORKDIR /frontend
 COPY . .
+RUN npm install -g parcel@next
 RUN npm install
 RUN npm run build
 
